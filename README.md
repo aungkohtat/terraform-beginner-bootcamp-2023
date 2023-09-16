@@ -216,4 +216,4 @@ If you lose this file, you lose knowning the state of your infrastructure.
 
 ### Terraform Directory
 
-.terraform directory contains binaries of terraform providers.
+`.terraform directory` contains binaries of terraform providers.
