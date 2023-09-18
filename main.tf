@@ -27,8 +27,7 @@ terraform {
 
 provider "aws" {
   region = "us-east-1"  # Replace with your desired AWS region
-  access_key = "AKIA3PP3KODU5TCVN667"  # Replace with your AWS access key
-  secret_key = "/Ms363YwaSxJdjChUuqHNY+Oter2zV94K4NQs+/S"  # Replace with your AWS secret key
+  
 }
 provider "random" {
   # Configuration options
