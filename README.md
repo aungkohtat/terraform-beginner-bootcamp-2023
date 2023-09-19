@@ -5,5 +5,6 @@
 
 ## Weekly Journals
 - [Week 0 Journal](journal/week0.md)
+- [Week 1 Journal](journal/week1.md)
 ## Extras
 - [GitHub Maskdown TOC Generator](https://derlin.github.io/bitdowntoc/)
