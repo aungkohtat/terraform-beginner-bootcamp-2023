@@ -19,8 +19,8 @@ In Week 1's live session, we hosted a static website using S3 and CDN. Comparing
 
 
 ## Weekly Journals 📔
-📅- [Week 0 Journal](journal/week0.md)
-📅- [Week 1 Journal](journal/week1.md)
-📅- [Week 2 Journal](journal/week2.md)
+- 📅 [Week 0 Journal](journal/week0.md)
+- 📅 [Week 1 Journal](journal/week1.md)
+- 📅 [Week 2 Journal](journal/week2.md)
 ## Extras
 - [GitHub Maskdown TOC Generator](https://derlin.github.io/bitdowntoc/)
