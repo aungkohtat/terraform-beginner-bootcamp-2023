@@ -26,28 +26,26 @@ terraform {
 }
 
 provider "aws" {
-  region = "us-east-1"  # Replace with your desired AWS region
-  
+  access_key = "AKIA3PP3KODUXZCAP64M"
+  secret_key = "E6C2LPJBjE8Sa+fGsn7zDqAiAkJfXDh8dGjiYT6U"
+  region = "us-east-1"  # Replace with your desired AWS region 
 }
 provider "random" {
   # Configuration options
 }
 
-# https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/string
 resource "random_string" "bucket_name" {
-  lower = true
-  upper = false
-  length   = 32
-  special  = false
+  lower   = true
+  upper   = false
+  numeric = true  # Use `numeric` to include numeric characters
+  special = false
+  length  = 16
 }
 
-# https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket
 resource "aws_s3_bucket" "example" {
-  # Bucket Naming Rules
-  #https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html?icmpid=docs_amazons3_console
-  bucket = random_string.bucket_name.result
+  bucket = "${random_string.bucket_name.result}-example"  # Appending a suffix for uniqueness
 }
 
 output "random_bucket_name" {
-  value = random_string.bucket_name.result
+  value = aws_s3_bucket.example.bucket
 }
