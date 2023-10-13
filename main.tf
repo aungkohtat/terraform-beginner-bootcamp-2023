@@ -21,29 +21,31 @@ terraform {
   #}
 }
 provider "terratowns" {
-  endpoint = "http://localhost:4567/api"
-  user_uuid="e328f4ab-b99f-421c-84c9-4ccea042c7d1" 
-  token="9b49b3fb-b8e9-483c-b703-97ba88eef8e0"
+  endpoint = var.terratowns_endpoint
+  user_uuid= var.teacherseat_user_uuid
+  token=var.terratowns_access_token
+
 }
-#module "terrahouse_aws" {
-#  source          = "./modules/terrahouse_aws"
-#  user_uuid       = var.user_uuid
-#  bucket_name     = var.bucket_name
-#  assets_path     = "path/to/assets"  # Replace with the appropriate assets path
-#  index_html_filepath = var.index_html_filepath
-#  error_html_filepath = var.error_html_filepath
-#  content_version  = var.content_version
-#}
+
+module "terrahouse_aws" {
+  source = "./modules/terrahouse_aws"
+  user_uuid = var.teacherseat_user_uuid
+  index_html_filepath = var.index_html_filepath
+  error_html_filepath = var.error_html_filepath
+  content_version = var.content_version
+  assets_path = var.assets_path
+}
 resource "terratowns_home" "home" {
-  name = "How to play Arcanum in 2023!"
+  name = "Amazing Bagan"
   description = <<DESCRIPTION
-Arcanum is a game from 2001 that shipped with alot of bugs.
-Modders have removed all the originals making this game really fun
-to play (despite that old look graphics). This is my guide that will
-show you how to play arcanum without spoiling the plot.
+History tells us that Bagan was founded in the 2nd Century AD and fortified in 849AD 
+by King Pyinbya, a successor of the founder of Bagan. The city was the capital of 
+the Pagan Empire from 1044 to 1287. During this time, the rulers and wealthy subjects 
+constructed more than 10,000 religious monuments. The city prospered during this time and 
+grew in size. It was centre for secular and religious studies. The Pagan empire collapsed in 1287.
 DESCRIPTION
-  #domain_name = module.terrahouse_aws.cloudfront_url
-  domain_name = "3fdq3gz.cloudfront.net"
-  town = "gamers-grotto"
+  domain_name = module.terrahouse_aws.cloudfront_url
+  #domain_name = "3ersrq z.cloudfront.net"
+  town = "missingo"
   content_version = 1
 }
