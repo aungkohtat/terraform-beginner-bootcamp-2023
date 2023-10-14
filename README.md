@@ -21,7 +21,7 @@
 ## Extras
 - [GitHub Maskdown TOC Generator](https://derlin.github.io/bitdowntoc/)
 
-## My Terratowms Home
+## My Terratowns Home
 
 ![002](https://github.com/aungkohtat/terraform-beginner-bootcamp-2023/assets/53327362/c47ef89c-f8d3-4965-a48c-bdc567feae48)
 
