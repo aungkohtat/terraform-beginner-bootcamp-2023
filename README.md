@@ -20,3 +20,18 @@
 - 📅 [Week 2 Journal](journal/week2.md)
 ## Extras
 - [GitHub Maskdown TOC Generator](https://derlin.github.io/bitdowntoc/)
+
+## My Terratowms Home
+
+![002](https://github.com/aungkohtat/terraform-beginner-bootcamp-2023/assets/53327362/c47ef89c-f8d3-4965-a48c-bdc567feae48)
+
+![001](https://github.com/aungkohtat/terraform-beginner-bootcamp-2023/assets/53327362/3ecd37b7-def2-493a-86cb-4f664a13486a)
+
+![004](https://github.com/aungkohtat/terraform-beginner-bootcamp-2023/assets/53327362/4f02c687-2182-4351-95c3-62dea52e3276)
+
+![003](https://github.com/aungkohtat/terraform-beginner-bootcamp-2023/assets/53327362/57612afa-7bc0-4ecc-acbf-c2c2a21cd5fc)
+
+![005](https://github.com/aungkohtat/terraform-beginner-bootcamp-2023/assets/53327362/8b9ba4d5-5154-4ee2-b3d2-a37643429799)
+
+
+
